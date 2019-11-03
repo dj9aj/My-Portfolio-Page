@@ -33,7 +33,7 @@
     
         <header class="header" id="header">
             <h1 class="heading-primary header__heading">Hi, I'm <span id="jack">Jack</span></h1>
-            <p class="header__text">I'm a Web Developer. I've created a portfolio to showcase my skills and projects.</p>
+            <p class="header__text">I'm a Full Stack Developer. I've created a portfolio to showcase my skills and projects.</p>
             <div class="header__links">
                 <a href="#section-about" class="btn btn--red btn-animated">About me</a>    
                 <a href="#section-work" class="btn btn--red btn-animated">My work</a>    
@@ -56,7 +56,7 @@
                 </div>
                 <div class="about__vr"></div>
                 <div class="about__text">
-                    <p class="paragraph">Attracted by new technologies and an ever-expanding industry, I recently took the plunge to pursue a career in what I love to do. I have five years experience working in the audio post production industry, which I believe has equipped me with the core skills to become an adept web developer in a team environment. I am a passionate and serious coder and I have spent the past year building web applications to demonstrate and continually improve my skill set. I am seeking a permanent role within an exciting company with a clear career path. If you would like to find out more about me, or you have any questions, please feel free to get in touch.</p>  
+                    <p class="paragraph">For the past 2 years, I have been writing code that powers websites, web-apps and other pieces of software. As a developer,  I follow the principles of extreme ownership, and I have a strong emphasis on delivering clean, maintainable code with clarity. I'm always curious to learn new skills, and I strive to continue challenging myself. If I'm not coding in my day job, I'm at home working on one of my projects just for fun, or trying to teach myself a new method or technology. If you would like to find out more about me, or you have any questions, please feel free to get in touch.</p>  
                     <a href="#section-skills" class="btn-text u-margin-right-medium">My skills &rarr;</a>         
                     <a href="pdf/jackdoyle-cv.pdf" target="_blank" class="btn-text">Download my C.V &rarr;</a>         
                 </div>
@@ -71,41 +71,43 @@
             <div class="heading-hr skills-hr"></div>
             <div class="skills">
                 <div class="skill">
-                    <i class="skill__icon fab fa-css3"></i>
-                    <h4 class="skill__heading">CSS3</h4>
+                    <div class="skill__icon-container">
+                        <i class="skill__icon fab fa-js "></i>
+                        <i class="skill__icon fab fa-react"></i>
+                        <i class="skill__icon fab fa-css3"></i>
+                        <i class="skill__icon fab fa-html5"></i>
+                        <i class="skill__icon fab fa-sass"></i>
+                        <i class="skill__icon fab fa-webpack"></i>
+                    </div>
+                    <h4 class="skill__heading">Frontend</h4>
                     <div class="skill__list">
-                        <li>Sass</li>
-                        <li>CSS-Grid</li>
-                        <li>CSS-Flexbox</li>
-                        <li>BEM Methodology</li>
-                        <li>Bootstrap</li>
+                        <li>JavaScript (ES5 and ES6+)</li>
+                        <li>ReactJS</li>
+                        <li>Sass and modern CSS technologies such as Flexbox and Grid</li>
+                        <li>Webpack and Babel</li>
                         <li>Mobile Responsive Design</li>
+                        <li>Experience working with older browser platforms such as IE11</li>
                     </div>    
                 </div>
                 <div class="skill">
-                    <i class="skill__icon fab fa-js "></i>
-                    <h4 class="skill__heading">JavaScript</h4>
+                    <i class="skill__icon fab fa-node "></i>
+                    <h4 class="skill__heading">Backend</h4>
                     <div class="skill__list">
-                        <li>ES6</li>
-                        <li>DOM Manipulation</li>
-                        <li>Ajax</li>
-                        <li>jQuery</li>
                         <li>NodeJS</li>
-                        <li>Express JS</li>
-                        <li>Passport JS</li>
-                        <li>MongoDB</li>
-                        <li>Webpack</li>
-                        <li>Web APIs</li>
+                        <li>ExpressJS</li>
+                        <li>Relational databases such as PostreSQL</li>
+                        <li>No SQL databases such as MongoDB</li>
                     </div>    
                 </div>
                 <div class="skill">
-                    <i class="skill__icon fab fa-html5"></i>
-                    <h4 class="skill__heading">HTML and other skills</h4>
+                    <i class="skill__icon fab fa-git"></i>
+                    <h4 class="skill__heading">Other Skills</h4>
                     <div class="skill__list">
-                        <li>HTML5 Semantic Elements</li>
-                        <li>Git/GitHub</li>
-                        <li>Babel</li>
-                        <li>Command Line Workflow</li>
+                        <li>React Native for iOS and Android</li>
+                        <li>GraphQL</li>
+                        <li>Git (including GitHub)</li>
+                        <li>BEM Methodology</li>
+                        <li>Good intuition on UX issues</li>
                     </div>    
                 </div>
             </div>
@@ -114,9 +116,41 @@
         <section class="section-work" id="section-work">
             <div class="u-center-text u-margin-top-medium u-margin-bottom-large">
                 <h2 class="heading-secondary heading-secondary--dark work-heading">
-                    My Work
+                    My Work Experience
                 </h2>
                 <div class="heading-hr work-hr"></div>
+            </div>
+            <div class="work-experience">
+                <div class="work-experience__description">
+                    <h3 class="heading-quaternary heading-quaternary--dark u-center-text">Full Stack Developer - Circular Wave</h3>
+                    <h4 class="heading-quinary heading-quinary--dark u-center-text">September 2018 - present</h3>
+                        <div class="heading-hr--small u-margin-bottom-medium"></div>
+                    <p class="work-experience__text u-margin-bottom-small">
+                        As part of an agile team, we have developed a React web application for NHS trusts to manage their workforce. Admins can share available ad hoc shifts through the web app, and healthcare professionals can apply for work and manage their timesheets through our React Native mobile app. Our backend consists of NodeJS microservices, and we use PostgreSQL and Firebase for our database.
+                    </p>
+                </div>
+                <div class="work-experience__pictures">
+                    <img src="img/circular_wave_app.png" alt="Forkify Screen Shot 1" class="work-experience__img-portrait--3">
+                    <img src="img/circular_wave_web_app.png" alt="Forkify Screen Shot 2" class="work-experience__img-portrait--4"> 
+                </div>
+                <div class="work-experience__content">
+                    <p class="work-experience__text u-margin-bottom-small">My main responsibilities and achievements - </p>
+                    <ul class="skill__list">
+                        <li>Develop features appropriate to scale, extensibility, and scope of the problem.</li>
+                        <li>Adhere to the DRY principle whilst maintaining a very large codebase on both frontend and backend.</li>
+                        <li>Implement technical planning on upcoming development tasks. This is to assess risks and consider how any changes will affect our application</li>
+                        <li>Follow Scrum methodologies, such as regular refinement meetings and two week sprints</li>
+                    </ul>
+                    
+                    <p class="work-experience__text u-margin-bottom-small">Technologies and tools include - </p>
+                    <ul class="skill__list">
+                        <li>ReactJS configured by Webpack for our web application. React Native for our mobile app. Redux for state management</li>
+                        <li>NodeJS microservices on the backend serving RESTful APIs</li>
+                        <li>PostgreSQL and Firebase databases</li>
+                        <li>Git/GitHub version control</li>
+                        <li>Jira management tool to track development team work</li>
+                    </ul>
+                </div>       
             </div>
             <div class="project">
                 <div class="project__pictures">
