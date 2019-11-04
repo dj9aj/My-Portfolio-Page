@@ -30,13 +30,15 @@
 
     &__icon-container {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
     }
     
     &__icon {
         font-size: 4rem;
         padding-top: 3rem;
         padding-bottom: 3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
         color: rgba($color-primary, 0.8);
         // @extend %fa-icon;
         // @extend .fas;
@@ -61,6 +63,23 @@
         & li:not(:last-child) {
             padding-bottom: 1rem;
         }  
+    }
+
+    &__pill-list {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    &__pill-box {
+        background-color: rgba($color-secondary, 0.8);
+        display: flex;
+        margin: .2rem;
+        color: $color-white;
+        padding: .2rem 1rem .2rem 1rem;
+        font-size: 1rem;
+        border-radius: .2rem;
+        box-shadow: 0 .2rem .6rem rgba($color-black, 0.1);
     }
 
     &:hover {

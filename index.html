@@ -33,7 +33,7 @@
     
         <header class="header" id="header">
             <h1 class="heading-primary header__heading">Hi, I'm <span id="jack">Jack</span></h1>
-            <p class="header__text">I'm a Full Stack Developer. I've created a portfolio to showcase my skills and projects.</p>
+            <p class="header__text">I'm a Full Stack Developer living in London. I've created a portfolio to showcase my skills and projects.</p>
             <div class="header__links">
                 <a href="#section-about" class="btn btn--red btn-animated">About me</a>    
                 <a href="#section-work" class="btn btn--red btn-animated">My work</a>    
@@ -56,7 +56,7 @@
                 </div>
                 <div class="about__vr"></div>
                 <div class="about__text">
-                    <p class="paragraph">For the past 2 years, I have been writing code that powers websites, web-apps and other pieces of software. As a developer,  I follow the principles of extreme ownership, and I have a strong emphasis on delivering clean, maintainable code with clarity. I'm always curious to learn new skills, and I strive to continue challenging myself. If I'm not coding in my day job, I'm at home working on one of my projects just for fun, or trying to teach myself a new method or technology. If you would like to find out more about me, or you have any questions, please feel free to get in touch.</p>  
+                    <p class="paragraph">For the past 2 years, I have been writing code that powers websites, web-apps, mobile-apps and other pieces of software. I'm always curious to learn new skills, and I strive to continue challenging myself. If I'm not coding in my day job, I'm at home working on one of my projects just for fun, or trying to teach myself a new method or technology. I'm currently looking for a new challenge, and I'm seeking a permanent role within an exciting company with a clear career path. If you would like to find out more about me, then let's grab a coffee and have a chat.</p>  
                     <a href="#section-skills" class="btn-text u-margin-right-medium">My skills &rarr;</a>         
                     <a href="pdf/jackdoyle-cv.pdf" target="_blank" class="btn-text">Download my C.V &rarr;</a>         
                 </div>
@@ -71,15 +71,7 @@
             <div class="heading-hr skills-hr"></div>
             <div class="skills">
                 <div class="skill">
-                    <div class="skill__icon-container">
-                        <i class="skill__icon fab fa-js "></i>
-                        <i class="skill__icon fab fa-react"></i>
-                        <i class="skill__icon fab fa-css3"></i>
-                        <i class="skill__icon fab fa-html5"></i>
-                        <i class="skill__icon fab fa-sass"></i>
-                        <i class="skill__icon fab fa-webpack"></i>
-                    </div>
-                    <h4 class="skill__heading">Frontend</h4>
+                    <h4 class="skill__heading u-margin-top-small">Frontend</h4>
                     <div class="skill__list">
                         <li>JavaScript (ES5 and ES6+)</li>
                         <li>ReactJS</li>
@@ -90,8 +82,7 @@
                     </div>    
                 </div>
                 <div class="skill">
-                    <i class="skill__icon fab fa-node "></i>
-                    <h4 class="skill__heading">Backend</h4>
+                    <h4 class="skill__heading u-margin-top-small">Backend</h4>
                     <div class="skill__list">
                         <li>NodeJS</li>
                         <li>ExpressJS</li>
@@ -100,8 +91,9 @@
                     </div>    
                 </div>
                 <div class="skill">
-                    <i class="skill__icon fab fa-git"></i>
-                    <h4 class="skill__heading">Other Skills</h4>
+                    <div class="skill__icon-container">
+                    </div>
+                    <h4 class="skill__heading u-margin-top-small">Other Skills</h4>
                     <div class="skill__list">
                         <li>React Native for iOS and Android</li>
                         <li>GraphQL</li>
@@ -135,7 +127,7 @@
                 </div>
                 <div class="work-experience__content">
                     <p class="work-experience__text u-margin-bottom-small">My main responsibilities and achievements - </p>
-                    <ul class="skill__list">
+                    <ul class="skill__list u-margin-bottom-medium">
                         <li>Develop features appropriate to scale, extensibility, and scope of the problem.</li>
                         <li>Adhere to the DRY principle whilst maintaining a very large codebase on both frontend and backend.</li>
                         <li>Implement technical planning on upcoming development tasks. This is to assess risks and consider how any changes will affect our application</li>
@@ -143,13 +135,40 @@
                     </ul>
                     
                     <p class="work-experience__text u-margin-bottom-small">Technologies and tools include - </p>
-                    <ul class="skill__list">
+                    <ul class="skill__list u-margin-bottom-medium"">
                         <li>ReactJS configured by Webpack for our web application. React Native for our mobile app. Redux for state management</li>
                         <li>NodeJS microservices on the backend serving RESTful APIs</li>
                         <li>PostgreSQL and Firebase databases</li>
                         <li>Git/GitHub version control</li>
+                        <li>Jest test suite for unit testing</li>
                         <li>Jira management tool to track development team work</li>
                     </ul>
+                    <div class="skill__pill-list">
+                        <div class="skill__pill-box">#JavaScript</div>
+                        <div class="skill__pill-box">#ReactJS</div>
+                        <div class="skill__pill-box">#React Native</div>
+                        <div class="skill__pill-box">#NodeJS</div>
+                        <div class="skill__pill-box">#ExpressJS</div>
+                        <div class="skill__pill-box">#PostgreSQL</div>
+                        <div class="skill__pill-box">#Firebase</div>
+                        <div class="skill__pill-box">#Jest</div>
+                        <div class="skill__pill-box">#CSS3</div>
+                        <div class="skill__pill-box">#Webpack</div>
+                        <div class="skill__pill-box">#Git/GitHub</div>
+                    </div> 
+                </div>    
+            </div>
+            <div class="project">
+                <div class="project__pictures">
+                    <img src="img/new_sneakers_sick_fits_large.png" alt="Forkify Screen Shot 1" class="project__img-landscape--1">
+                    <img src="img/main_page_sick_fits_large.png" alt="Forkify Screen Shot 2" class="project__img-landscape--2">  
+                </div>
+                <div class="project__content">
+                    <h3 class="heading-tertiary heading-tertiary--dark u-center-text">Sick Fits</h3>
+                    <div class="heading-hr--small u-margin-bottom-medium"></div>
+                    <p class="project__text u-margin-bottom-small">Sick Fits is a fictional online store built with ReactJS and GraphQL. The full stack application is built with a NodeJS backend alongside a GraphQL Yoga server, which handles all of my custom server side logic, such as credit card transactions via Stripe, password reset, permissions management and more. The backend also interfaces with Prisma, which is a powerful ORM library that sits on top of the database. GraphQL has been a buzz lately and I was keen to give it a try. It's essentially an alternative to the way in which REST APIs work. In contrast to hitting an API endpoint, where you just accept the data that's returned to you, GraphQL allows you to write queries on the client side and it gives you the freedom to specify the exact data in the shape that you want returned from the server. I used Jest for testing the key React components and GraphQL queries. Please refer to my GitHub repo for more information about my approach and the technologies used</p>
+                    <a href="https://shielded-fjord-62551.herokuapp.com/" target="_blank" class="btn-text u-margin-right-medium u-margin-top-small">View App &rarr;</a> 
+                    <a href="https://github.com/dj9aj/Forkify" target="_blank" class="btn-text u-margin-top-small">View Code &rarr;</a> 
                 </div>       
             </div>
             <div class="project">
@@ -202,18 +221,6 @@
                     <p class="project__text u-margin-bottom-small">YelpCamp is a RESTful full-stack application, built with ExpressJS, PassportJS and MongoDB. The app uses EJS templates to interact between the backend and frontend. Users can create an account and post, edit and delete campgrounds. Users can also review campgrounds and leave comments. I have incorporated the Google Maps API to display a campground's location. The app is styled with Bootstrap.</p>
                     <a href="https://stark-earth-71369.herokuapp.com/" target="_blank" class="btn-text u-margin-right-medium u-margin-top-small">View App &rarr;</a> 
                     <a href="https://github.com/dj9aj/YelpCamp" target="_blank" class="btn-text u-margin-top-small">View Code &rarr;</a> 
-                </div>       
-            </div>
-            <div class="project">
-                <div class="project__pictures">
-                    <img src="img/portfolio-2-small.png" alt="My Budget Pal Screen Shot 1" class="project__img-landscape--1">
-                    <img src="img/portfolio-1-small.png" alt="My Budget Pal Screen Shot 2" class="project__img-landscape--2">  
-                </div>
-                <div class="project__content">
-                    <h3 class="heading-tertiary heading-tertiary--dark u-center-text">My Portfolio Site</h3>
-                    <div class="heading-hr--small u-margin-bottom-medium"></div>
-                    <p class="project__text u-margin-bottom-small">Yes you guessed it! The site you’re currently on is my portfolio page. Alongside the latest HTML5 syntax, I implemented the BEM methodology and Sass, which enabled me to break different components down into separate Sass files, with the potential to re-use elements in future projects. I used a mixture of Flexbox and Grid to design the layout of the page. I wrote a JavaScript function to add and remove classes on the navigation bar depending on the scroll position of the page.</p>
-                    <a href="https://github.com/dj9aj/My-Portfolio-Page" target="_blank" class="btn-text u-margin-top-small">View Code &rarr;</a> 
                 </div>       
             </div>
         </section>
